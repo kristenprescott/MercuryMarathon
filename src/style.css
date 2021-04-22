@@ -50,27 +50,38 @@ h4 {
 }
 
 p {
-  font-size: 1.4rem;
-  line-height: 2.2rem;
+  font-size: 1.68rem;
+  line-height: 2.64rem;
   padding: 1rem 0;
 }
 
 a, a:visited {
-  color: #D14348;
+  color: #05408d;
+  font-weight: 600;
   text-decoration: none;
 }
 
 a:hover {
-  color: #05408d;
+  color: #d32329;
 }
 
+@keyframes moveInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .light {
   font-weight: lighter;
 }
 
 .heavy {
-  font-weight: bold;
-  font-size: 1.6rem;
+  font-weight: 800;
 }
 
 .loading {
@@ -89,21 +100,167 @@ a:hover {
   transform: translate(-50%, -50%);
 }
 
-header {
-  height: 200px;
-  border: 2px solid #131313;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+.white {
+  color: #f5f5ff;
 }
 
-nav ul {
-  margin: 2rem;
+.italic {
+  font-style: italic;
 }
-nav ul li {
+
+.App header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #05408d;
+  border-bottom: 4px solid #d32329;
+}
+.App .container {
+  margin: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.App .container .title-div {
+  position: relative;
+  bottom: 6px;
+  margin-left: 2rem;
+  line-height: 2.2rem;
+}
+.App .container .title-div h2 {
+  color: #d32329;
+}
+.App .container .logo-div img {
+  width: 120px;
+}
+
+.NavBar {
+  position: absolute;
+  right: 0;
+  top: 124px;
+  background-color: #d32329;
+  animation: moveInRight 2s;
+  animation-fill-mode: forwards;
+}
+.NavBar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavBar ul li {
   font-size: 15px;
   display: inline;
   padding: 1rem 2rem;
+}
+.NavBar ul li a {
+  color: #f5f5ff;
+  transition: color 0.1s;
+}
+.NavBar ul li a:hover {
+  color: #05408d;
+}
+
+.Home .jumbo img {
+  object-fit: cover;
+  object-position: top;
+  height: 50vh;
+  width: 100vw;
+}
+.Home .countdown-div {
+  background-color: rgba(0, 0, 0, 0.575);
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  margin-top: -104px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  width: 50%;
+}
+.Home .countdown-div p {
+  font-size: 30px;
+  color: #f5f5ff;
+  margin-right: 3rem;
+  letter-spacing: 0.25rem;
+  line-height: 1rem;
+}
+.Home .countdown-div h2 {
+  font-size: 50px;
+  color: #f5f5ff;
+}
+.Home .countdown-div h2 span {
+  font-size: inherit;
+}
+.Home .content-2 {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: -4px;
+}
+.Home .content-2 .race-info {
+  border: 30px solid #d32329;
+  border-right: none;
+  border-left: none;
+  padding: 2rem;
+  width: 50%;
+}
+.Home .content-2 .race-info h2 {
+  margin: 0;
+}
+.Home .content-2 .race-info ul {
+  margin-top: 1rem;
+  list-style: none;
+}
+.Home .content-2 .race-info ul li {
+  margin-left: 1rem;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: #d32329;
+}
+.Home .content-2 .race-info ul li p {
+  margin-left: 1rem;
+  color: #131313;
+  line-height: 1.1rem;
+}
+.Home .content-2 .race-info a {
+  display: inline-block;
+  margin: 1rem 0;
+  margin-top: 2rem;
+  background-color: #05408d;
+  padding: 1rem;
+  color: #f5f5ff;
+}
+.Home .content-2 .race-info a:hover {
+  background-color: #1461c7;
+}
+.Home .content-2 .pic {
+  border: 30px solid #05408d;
+  border-right: none;
+  border-left: none;
+  width: 50%;
+}
+.Home .content-2 .pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media screen and (max-width: 970px) {
+  .Home .content-2 {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+  .Home .content-2 .race-info {
+    width: 100%;
+  }
+  .Home .content-2 .pic {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

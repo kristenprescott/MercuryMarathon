@@ -4,8 +4,192 @@
 @import "keyFrames";
 @import "transitions";
 @import "classStyles";
-@import "./app";
-@import "../Pages/Home/home";
-@import "../Pages/PreviousRaces/previousRaces";
-@import "../Pages/Register/register";
-@import "../Pages/LiveEvent/liveevent";
+
+.App {
+	header {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: $color-primary;
+		border-bottom: 4px solid $color-secondary;
+	}
+	.container {
+		margin: 1rem;
+		margin-left: 2rem;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		.title-div {
+			position: relative;
+			bottom: 6px;
+			margin-left: 2rem;
+			line-height: $line-height-base;
+			h2 {
+				color: $color-secondary;
+			}
+		}
+		.logo-div {
+			img {
+				width: 120px;
+			}
+		}
+	}
+}
+
+.NavBar {
+	position: absolute;
+	right: 0;
+	top: 124px;
+	background-color: $color-secondary;
+	animation: moveInRight 2s;
+	animation-fill-mode: forwards;
+	ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		li {
+			font-size: $font-size-base * 1.5;
+			display: inline;
+			padding: 1rem 2rem;
+			// background-color: black;
+			a {
+				color: $white;
+				transition: color .1s;
+			}
+			a:hover {
+				color: $color-primary;
+			}
+		}
+	}
+}
+
+.Home {
+	.jumbo {
+		img {
+			object-fit: cover;
+			object-position: top;
+			height: 50vh;
+			width: 100vw;
+		}
+	}
+	.countdown-div {
+		background-color: rgba(0, 0, 0, 0.575);
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		margin-top: -104px;
+		display: flex;
+		flex-direction: column;
+		padding: 1rem 2rem;
+		width: 50%;
+		p {
+			font-size: $font-size-base * 3;
+			color: $white;
+			margin-right: 3rem;
+			letter-spacing: .25rem;
+			line-height: 1rem;
+		}
+		h2 {
+			font-size: $font-size-base * 5;
+			color: $white;
+			span {
+				font-size: inherit;
+			}
+		}
+	}
+	.content-2 {
+		display: flex;
+		justify-content: space-around;
+		position: relative;
+		margin-top: -4px;
+		// margin: 2rem 0;
+		.race-info {
+			border: 30px solid $color-secondary;
+			border-right: none;
+			border-left: none;
+			padding: 2rem;
+			width: 50%;
+			h2 {
+				margin: 0;
+			}
+			ul {
+				margin-top: 1rem;
+				list-style: none;
+				li {
+					margin-left: 1rem;
+					font-size: $font-size-base * 2;
+					display: flex;
+					align-items: center;
+					color: $color-secondary;
+					p {
+						margin-left: 1rem;
+						color: $black;
+						line-height: $line-height-base / 2;
+					}
+				}
+			}
+			a {
+				display: inline-block;
+				margin: 1rem 0;
+				margin-top: 2rem;
+				background-color: $color-primary;
+				padding: 1rem;
+				color: $white;
+			}
+			a:hover {
+				background-color: $color-primary-light;
+			}
+		}
+		.pic {
+			border: 30px solid $color-primary;
+			border-right: none;
+			border-left: none;
+			width: 50%;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: left;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 970px) {
+	.Home {
+		.jumbo {
+			img {
+			}
+		}
+		.countdown-div {
+			p {
+			}
+			h2 {
+				span {
+				}
+			}
+		}
+		.content-2 {
+			flex-direction: column;
+			align-items: center;
+			width: 100vw;
+			.race-info {
+				width: 100%;
+				h2 {
+				}
+				ul {
+					li {
+						p {
+						}
+					}
+				}
+			}
+			.pic {
+				width: 100%;
+				img {
+				}
+			}
+		}
+	}
+}

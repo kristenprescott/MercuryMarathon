@@ -1,18 +1,25 @@
 import { Link, Route, Switch } from 'react-router-dom'
-import Home from './Pages/Home/Home'
+import Home from './Pages/Home'
 import Register from './Pages/Register/Register'
 import LiveEvent from './Pages/LiveEvent/LiveEvent'
 import PreviousRaces from './Pages/PreviousRaces/PreviousRaces'
-
+import logo from './images/logo-2.png'
+import { Button } from '@material-ui/core'
 
 function App() {
 	return (
 		<div className="App">
 			<header>
-				<div>
-					<h1>Header and Logo</h1>
+				<div className="container">
+					<div className="logo-div">
+						<img src={logo} alt="" />
+					</div>
+					<div className="title-div">
+						<h2 className="white light italic">the annual</h2>
+						<h1 className="white"><span className="light">MERCURY</span> MARATHON</h1>
+					</div>
 				</div>
-				<nav>
+				<nav className="NavBar">
 					<ul className="nav">
 						<li className="nav-item">
 							<Link to='/' className='nav-link'>Home</Link>
@@ -37,6 +44,9 @@ function App() {
 					<Route path='/previous_races/' component={PreviousRaces} />
 				</Switch>
 			</main>
+			<footer>
+
+			</footer>
 		</div>
 	);
 }
