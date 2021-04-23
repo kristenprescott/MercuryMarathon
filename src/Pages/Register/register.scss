@@ -1,0 +1,95 @@
+$dark-grey: #b9baba;
+$med-grey: #b9baba;
+$light-grey: #e0e1e1;
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  text-align: center;
+}
+hr {
+  margin: 1vmin;
+  color: $light-grey;
+  background-color: $light-grey;
+  border: 1px solid $light-grey;
+  border-radius: 4px;
+}
+button {
+  height: 3vmin;
+  width: 6vmin;
+  //   overflow: hidden;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s all;
+  min-width: 15ch;
+  max-width: 30ch;
+  line-height: 2;
+  overflow: hidden;
+  border: 1px solid $med-grey;
+  padding-left: 1vmin;
+}
+input:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+input[type="number"] {
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
+select {
+  // select resets:
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  width: 100%;
+  //   min-width: 15ch;
+  //   max-width: 30ch;
+  border: 1px solid $med-grey;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  border-radius: 4px;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.3s all;
+}
+.select:hover {
+  background-color: rgba(255, 255, 255, 0.45);
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+.time {
+  flex-direction: row;
+}

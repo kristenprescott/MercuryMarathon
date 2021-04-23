@@ -1,0 +1,1107 @@
+[
+  {
+    "runner": {
+      "id": 1,
+      "first_name": "Wilma",
+      "last_name": "Storkes",
+      "sex": "Male",
+      "city": "Dulles",
+      "state": "Virginia"
+    },
+    "results": [
+      {
+        "race_year": 1994,
+        "time": "21:58:09",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      { "race_year": 2006, "time": "8:38:34", "wheelchair": false, "cohort": 4 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 2,
+      "first_name": "Hinze",
+      "last_name": "Spilisy",
+      "sex": "Male",
+      "city": "Irving",
+      "state": "Texas"
+    },
+    "results": [
+      {
+        "race_year": 1999,
+        "time": "12:18:08",
+        "wheelchair": true,
+        "cohort": 5
+      },
+      {
+        "race_year": 2012,
+        "time": "9:22:16",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      {
+        "race_year": 2010,
+        "time": "12:06:28",
+        "wheelchair": false,
+        "cohort": 3
+      }
+    ]
+  },
+  {
+    "runner": {
+      "id": 3,
+      "first_name": "Addia",
+      "last_name": "Bartlett",
+      "sex": "Male",
+      "city": "Richmond",
+      "state": "Virginia"
+    },
+    "results": [
+      { "race_year": 1994, "time": "9:53:14", "wheelchair": false, "cohort": 1 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 4,
+      "first_name": "Inna",
+      "last_name": "McPheat",
+      "sex": "Female",
+      "city": "North Las Vegas",
+      "state": "Nevada"
+    },
+    "results": []
+  },
+  {
+    "runner": {
+      "id": 5,
+      "first_name": "Janaye",
+      "last_name": "Wharton",
+      "sex": "Female",
+      "city": "Denver",
+      "state": "Colorado"
+    },
+    "results": [
+      {
+        "race_year": 1995,
+        "time": "14:15:45",
+        "wheelchair": false,
+        "cohort": 3
+      }
+    ]
+  },
+  {
+    "runner": {
+      "id": 6,
+      "first_name": "Thornie",
+      "last_name": "Sawday",
+      "sex": "Male",
+      "city": "Shawnee Mission",
+      "state": "Kansas"
+    },
+    "results": [
+      {
+        "race_year": 2000,
+        "time": "4:37:53",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 2010, "time": "2:27:22", "wheelchair": true, "cohort": 5 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 7,
+      "first_name": "Nadeen",
+      "last_name": "Shord",
+      "sex": "Male",
+      "city": "Baton Rouge",
+      "state": "Louisiana"
+    },
+    "results": [
+      {
+        "race_year": 2002,
+        "time": "14:27:06",
+        "wheelchair": true,
+        "cohort": 5
+      },
+      { "race_year": 1999, "time": "1:15:42", "wheelchair": true, "cohort": 3 },
+      {
+        "race_year": 1995,
+        "time": "16:45:28",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      { "race_year": 1984, "time": "19:14:03", "wheelchair": true, "cohort": 3 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 8,
+      "first_name": "Georgie",
+      "last_name": "Inch",
+      "sex": "Male",
+      "city": "Saint Petersburg",
+      "state": "Florida"
+    },
+    "results": [
+      { "race_year": 2012, "time": "8:23:54", "wheelchair": true, "cohort": 4 },
+      {
+        "race_year": 2009,
+        "time": "13:20:34",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 1984, "time": "11:37:59", "wheelchair": true, "cohort": 2 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 9,
+      "first_name": "Sunny",
+      "last_name": "Franzel",
+      "sex": "Female",
+      "city": "Detroit",
+      "state": "Michigan"
+    },
+    "results": [
+      { "race_year": 2000, "time": "3:35:33", "wheelchair": true, "cohort": 1 },
+      {
+        "race_year": 2001,
+        "time": "11:53:22",
+        "wheelchair": true,
+        "cohort": 4
+      },
+      { "race_year": 2012, "time": "20:01:40", "wheelchair": true, "cohort": 3 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 10,
+      "first_name": "Ximenes",
+      "last_name": "Sprigging",
+      "sex": "Female",
+      "city": "Memphis",
+      "state": "Tennessee"
+    },
+    "results": [
+      {
+        "race_year": 1997,
+        "time": "7:33:20",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      {
+        "race_year": 1983,
+        "time": "12:01:32",
+        "wheelchair": true,
+        "cohort": 2
+      },
+      { "race_year": 2006, "time": "14:53:07", "wheelchair": true, "cohort": 2 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 11,
+      "first_name": "Charlene",
+      "last_name": "Whyborne",
+      "sex": "Female",
+      "city": "Garland",
+      "state": "Texas"
+    },
+    "results": [
+      {
+        "race_year": 2007,
+        "time": "22:28:05",
+        "wheelchair": true,
+        "cohort": 3
+      },
+      {
+        "race_year": 1994,
+        "time": "21:11:04",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      {
+        "race_year": 2002,
+        "time": "10:47:23",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      {
+        "race_year": 1994,
+        "time": "23:25:05",
+        "wheelchair": true,
+        "cohort": 5
+      },
+      { "race_year": 2005, "time": "6:50:10", "wheelchair": false, "cohort": 2 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 12,
+      "first_name": "Lewes",
+      "last_name": "Adnams",
+      "sex": "Male",
+      "city": "Garland",
+      "state": "Texas"
+    },
+    "results": [
+      {
+        "race_year": 2001,
+        "time": "6:24:23",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      {
+        "race_year": 2005,
+        "time": "3:32:32",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 1995, "time": "7:45:33", "wheelchair": true, "cohort": 1 },
+      {
+        "race_year": 2010,
+        "time": "0:47:05",
+        "wheelchair": false,
+        "cohort": 1
+      },
+      { "race_year": 1999, "time": "7:55:45", "wheelchair": false, "cohort": 3 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 13,
+      "first_name": "Eddy",
+      "last_name": "Papa",
+      "sex": "Female",
+      "city": "York",
+      "state": "Pennsylvania"
+    },
+    "results": []
+  },
+  {
+    "runner": {
+      "id": 14,
+      "first_name": "Jillie",
+      "last_name": "Lang",
+      "sex": "Female",
+      "city": "Evansville",
+      "state": "Indiana"
+    },
+    "results": [
+      {
+        "race_year": 1998,
+        "time": "1:53:41",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 2007, "time": "8:39:31", "wheelchair": false, "cohort": 3 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 15,
+      "first_name": "Clerkclaude",
+      "last_name": "Eadmead",
+      "sex": "Male",
+      "city": "El Paso",
+      "state": "Texas"
+    },
+    "results": [
+      {
+        "race_year": 1995,
+        "time": "12:13:51",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 1994, "time": "8:12:28", "wheelchair": true, "cohort": 3 },
+      {
+        "race_year": 2001,
+        "time": "8:56:28",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      {
+        "race_year": 2008,
+        "time": "11:25:43",
+        "wheelchair": true,
+        "cohort": 4
+      },
+      { "race_year": 2011, "time": "9:52:36", "wheelchair": true, "cohort": 2 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 16,
+      "first_name": "Em",
+      "last_name": "Slogrove",
+      "sex": "Male",
+      "city": "Fresno",
+      "state": "California"
+    },
+    "results": [
+      { "race_year": 1987, "time": "12:11:56", "wheelchair": true, "cohort": 4 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 17,
+      "first_name": "Wash",
+      "last_name": "Clout",
+      "sex": "Male",
+      "city": "Brooklyn",
+      "state": "New York"
+    },
+    "results": [
+      {
+        "race_year": 1999,
+        "time": "5:21:58",
+        "wheelchair": false,
+        "cohort": 1
+      },
+      {
+        "race_year": 1996,
+        "time": "16:09:38",
+        "wheelchair": true,
+        "cohort": 5
+      },
+      {
+        "race_year": 1999,
+        "time": "3:10:54",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      {
+        "race_year": 2005,
+        "time": "10:24:21",
+        "wheelchair": true,
+        "cohort": 4
+      },
+      { "race_year": 2012, "time": "2:12:19", "wheelchair": true, "cohort": 1 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 18,
+      "first_name": "Harriet",
+      "last_name": "Cove",
+      "sex": "Female",
+      "city": "Grand Forks",
+      "state": "North Dakota"
+    },
+    "results": [
+      {
+        "race_year": 2002,
+        "time": "2:22:17",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      {
+        "race_year": 1987,
+        "time": "14:17:03",
+        "wheelchair": false,
+        "cohort": 1
+      },
+      {
+        "race_year": 2013,
+        "time": "12:48:51",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      {
+        "race_year": 1996,
+        "time": "11:13:53",
+        "wheelchair": true,
+        "cohort": 2
+      },
+      { "race_year": 1992, "time": "10:59:42", "wheelchair": true, "cohort": 2 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 19,
+      "first_name": "Roxanne",
+      "last_name": "Everton",
+      "sex": "Female",
+      "city": "San Jose",
+      "state": "California"
+    },
+    "results": [
+      { "race_year": 2003, "time": "10:41:49", "wheelchair": true, "cohort": 1 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 20,
+      "first_name": "Isidor",
+      "last_name": "Baxter",
+      "sex": "Female",
+      "city": "Providence",
+      "state": "Rhode Island"
+    },
+    "results": [
+      {
+        "race_year": 1999,
+        "time": "11:54:37",
+        "wheelchair": false,
+        "cohort": 1
+      }
+    ]
+  },
+  {
+    "runner": {
+      "id": 21,
+      "first_name": "Kendell",
+      "last_name": "Hourihane",
+      "sex": "Male",
+      "city": "Fort Myers",
+      "state": "Florida"
+    },
+    "results": [
+      {
+        "race_year": 1989,
+        "time": "1:36:37",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 1997, "time": "9:22:31", "wheelchair": true, "cohort": 1 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 22,
+      "first_name": "Temple",
+      "last_name": "Tynan",
+      "sex": "Male",
+      "city": "Odessa",
+      "state": "Texas"
+    },
+    "results": [
+      {
+        "race_year": 1995,
+        "time": "10:29:54",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 2012, "time": "23:04:21", "wheelchair": true, "cohort": 3 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 23,
+      "first_name": "Elston",
+      "last_name": "Lohrensen",
+      "sex": "Male",
+      "city": "San Antonio",
+      "state": "Texas"
+    },
+    "results": [
+      {
+        "race_year": 1993,
+        "time": "12:18:49",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      {
+        "race_year": 2004,
+        "time": "16:10:11",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      {
+        "race_year": 1985,
+        "time": "9:45:00",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      {
+        "race_year": 2004,
+        "time": "20:25:23",
+        "wheelchair": true,
+        "cohort": 2
+      },
+      { "race_year": 1995, "time": "8:27:36", "wheelchair": false, "cohort": 4 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 24,
+      "first_name": "Noel",
+      "last_name": "Caurah",
+      "sex": "Male",
+      "city": "Richmond",
+      "state": "California"
+    },
+    "results": [
+      {
+        "race_year": 2010,
+        "time": "10:02:00",
+        "wheelchair": true,
+        "cohort": 2
+      },
+      { "race_year": 2003, "time": "9:28:34", "wheelchair": true, "cohort": 3 },
+      {
+        "race_year": 2000,
+        "time": "1:14:26",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      { "race_year": 2001, "time": "18:04:09", "wheelchair": true, "cohort": 3 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 25,
+      "first_name": "Elsey",
+      "last_name": "Bischop",
+      "sex": "Male",
+      "city": "Panama City",
+      "state": "Florida"
+    },
+    "results": [
+      { "race_year": 2003, "time": "0:24:10", "wheelchair": true, "cohort": 2 },
+      {
+        "race_year": 1996,
+        "time": "16:55:32",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      {
+        "race_year": 2013,
+        "time": "19:56:33",
+        "wheelchair": true,
+        "cohort": 5
+      },
+      {
+        "race_year": 2011,
+        "time": "21:00:54",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      {
+        "race_year": 2010,
+        "time": "19:56:18",
+        "wheelchair": false,
+        "cohort": 2
+      }
+    ]
+  },
+  {
+    "runner": {
+      "id": 26,
+      "first_name": "Nikkie",
+      "last_name": "Yedall",
+      "sex": "Male",
+      "city": "Austin",
+      "state": "Texas"
+    },
+    "results": [
+      {
+        "race_year": 1996,
+        "time": "20:40:24",
+        "wheelchair": true,
+        "cohort": 4
+      },
+      {
+        "race_year": 1997,
+        "time": "9:56:30",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      {
+        "race_year": 1999,
+        "time": "13:52:05",
+        "wheelchair": true,
+        "cohort": 5
+      },
+      {
+        "race_year": 1993,
+        "time": "4:27:00",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      { "race_year": 2006, "time": "0:04:34", "wheelchair": false, "cohort": 3 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 27,
+      "first_name": "Madalena",
+      "last_name": "Aynscombe",
+      "sex": "Male",
+      "city": "Cincinnati",
+      "state": "Ohio"
+    },
+    "results": [
+      { "race_year": 1995, "time": "3:17:57", "wheelchair": true, "cohort": 2 },
+      { "race_year": 1993, "time": "6:45:24", "wheelchair": true, "cohort": 5 },
+      {
+        "race_year": 2000,
+        "time": "21:55:45",
+        "wheelchair": false,
+        "cohort": 4
+      }
+    ]
+  },
+  {
+    "runner": {
+      "id": 28,
+      "first_name": "Cob",
+      "last_name": "Kersting",
+      "sex": "Male",
+      "city": "Trenton",
+      "state": "New Jersey"
+    },
+    "results": [
+      {
+        "race_year": 2009,
+        "time": "13:24:34",
+        "wheelchair": true,
+        "cohort": 2
+      },
+      {
+        "race_year": 1990,
+        "time": "10:47:09",
+        "wheelchair": false,
+        "cohort": 5
+      }
+    ]
+  },
+  {
+    "runner": {
+      "id": 29,
+      "first_name": "Court",
+      "last_name": "Mival",
+      "sex": "Male",
+      "city": "Tampa",
+      "state": "Florida"
+    },
+    "results": [
+      {
+        "race_year": 1994,
+        "time": "4:42:53",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      { "race_year": 2006, "time": "6:04:45", "wheelchair": true, "cohort": 5 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 30,
+      "first_name": "Daphene",
+      "last_name": "Rives",
+      "sex": "Male",
+      "city": "Salinas",
+      "state": "California"
+    },
+    "results": [
+      {
+        "race_year": 1996,
+        "time": "17:14:44",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      { "race_year": 1998, "time": "2:20:53", "wheelchair": false, "cohort": 4 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 31,
+      "first_name": "Averill",
+      "last_name": "Kettel",
+      "sex": "Male",
+      "city": "Lansing",
+      "state": "Michigan"
+    },
+    "results": [
+      { "race_year": 2008, "time": "6:19:40", "wheelchair": true, "cohort": 5 },
+      {
+        "race_year": 2006,
+        "time": "21:07:49",
+        "wheelchair": true,
+        "cohort": 1
+      },
+      { "race_year": 2008, "time": "5:04:11", "wheelchair": true, "cohort": 5 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 32,
+      "first_name": "Stirling",
+      "last_name": "Semeradova",
+      "sex": "Female",
+      "city": "Amarillo",
+      "state": "Texas"
+    },
+    "results": [
+      { "race_year": 2005, "time": "0:15:52", "wheelchair": false, "cohort": 2 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 33,
+      "first_name": "Alfy",
+      "last_name": "Hablet",
+      "sex": "Male",
+      "city": "Portland",
+      "state": "Oregon"
+    },
+    "results": [
+      {
+        "race_year": 2010,
+        "time": "21:17:54",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      {
+        "race_year": 2002,
+        "time": "3:39:26",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      { "race_year": 2002, "time": "7:26:34", "wheelchair": true, "cohort": 3 },
+      { "race_year": 1990, "time": "17:33:50", "wheelchair": true, "cohort": 4 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 34,
+      "first_name": "Petr",
+      "last_name": "McCarthy",
+      "sex": "Female",
+      "city": "Dallas",
+      "state": "Texas"
+    },
+    "results": [
+      {
+        "race_year": 2003,
+        "time": "10:35:57",
+        "wheelchair": true,
+        "cohort": 1
+      },
+      {
+        "race_year": 1989,
+        "time": "18:02:38",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      { "race_year": 2006, "time": "11:16:27", "wheelchair": true, "cohort": 4 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 35,
+      "first_name": "Timmie",
+      "last_name": "Storror",
+      "sex": "Female",
+      "city": "Philadelphia",
+      "state": "Pennsylvania"
+    },
+    "results": [
+      {
+        "race_year": 2012,
+        "time": "18:04:00",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      {
+        "race_year": 2011,
+        "time": "9:30:09",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 2003, "time": "8:51:34", "wheelchair": true, "cohort": 5 },
+      { "race_year": 2007, "time": "23:40:56", "wheelchair": true, "cohort": 2 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 36,
+      "first_name": "Ketty",
+      "last_name": "Screech",
+      "sex": "Male",
+      "city": "Modesto",
+      "state": "California"
+    },
+    "results": [
+      { "race_year": 2006, "time": "7:57:12", "wheelchair": true, "cohort": 3 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 37,
+      "first_name": "Wendye",
+      "last_name": "Ranvoise",
+      "sex": "Male",
+      "city": "Fort Lauderdale",
+      "state": "Florida"
+    },
+    "results": [
+      {
+        "race_year": 1992,
+        "time": "18:40:12",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      {
+        "race_year": 2005,
+        "time": "14:58:15",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      {
+        "race_year": 2005,
+        "time": "23:00:04",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      {
+        "race_year": 2003,
+        "time": "18:41:00",
+        "wheelchair": true,
+        "cohort": 2
+      },
+      { "race_year": 1989, "time": "8:37:47", "wheelchair": true, "cohort": 1 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 38,
+      "first_name": "Eolanda",
+      "last_name": "Ransbury",
+      "sex": "Male",
+      "city": "San Francisco",
+      "state": "California"
+    },
+    "results": []
+  },
+  {
+    "runner": {
+      "id": 39,
+      "first_name": "Cody",
+      "last_name": "Mathewes",
+      "sex": "Male",
+      "city": "Albany",
+      "state": "Georgia"
+    },
+    "results": [
+      {
+        "race_year": 1996,
+        "time": "15:45:43",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      { "race_year": 1997, "time": "2:25:53", "wheelchair": true, "cohort": 1 },
+      {
+        "race_year": 2010,
+        "time": "23:26:28",
+        "wheelchair": true,
+        "cohort": 3
+      },
+      { "race_year": 2008, "time": "8:05:21", "wheelchair": true, "cohort": 4 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 40,
+      "first_name": "Janela",
+      "last_name": "Losty",
+      "sex": "Male",
+      "city": "Saint Petersburg",
+      "state": "Florida"
+    },
+    "results": [
+      {
+        "race_year": 1989,
+        "time": "11:08:01",
+        "wheelchair": true,
+        "cohort": 1
+      },
+      { "race_year": 2011, "time": "0:31:52", "wheelchair": true, "cohort": 4 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 41,
+      "first_name": "Inesita",
+      "last_name": "Sidsaff",
+      "sex": "Male",
+      "city": "Columbia",
+      "state": "South Carolina"
+    },
+    "results": []
+  },
+  {
+    "runner": {
+      "id": 42,
+      "first_name": "Lawry",
+      "last_name": "Rome",
+      "sex": "Female",
+      "city": "Hyattsville",
+      "state": "Maryland"
+    },
+    "results": [
+      {
+        "race_year": 2011,
+        "time": "22:32:02",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      {
+        "race_year": 1991,
+        "time": "7:13:38",
+        "wheelchair": false,
+        "cohort": 2
+      },
+      { "race_year": 2006, "time": "2:22:31", "wheelchair": false, "cohort": 1 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 43,
+      "first_name": "Yardley",
+      "last_name": "Waymont",
+      "sex": "Male",
+      "city": "Colorado Springs",
+      "state": "Colorado"
+    },
+    "results": [
+      { "race_year": 2008, "time": "2:07:13", "wheelchair": false, "cohort": 1 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 44,
+      "first_name": "Helenka",
+      "last_name": "Dimmock",
+      "sex": "Male",
+      "city": "Miami",
+      "state": "Florida"
+    },
+    "results": [
+      {
+        "race_year": 1997,
+        "time": "7:25:58",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      {
+        "race_year": 1985,
+        "time": "9:49:27",
+        "wheelchair": false,
+        "cohort": 3
+      },
+      {
+        "race_year": 1993,
+        "time": "13:34:14",
+        "wheelchair": false,
+        "cohort": 4
+      }
+    ]
+  },
+  {
+    "runner": {
+      "id": 45,
+      "first_name": "Peg",
+      "last_name": "Markwell",
+      "sex": "Male",
+      "city": "Jefferson City",
+      "state": "Missouri"
+    },
+    "results": []
+  },
+  {
+    "runner": {
+      "id": 46,
+      "first_name": "Jillie",
+      "last_name": "Bompass",
+      "sex": "Female",
+      "city": "San Antonio",
+      "state": "Texas"
+    },
+    "results": [
+      { "race_year": 1991, "time": "7:28:52", "wheelchair": false, "cohort": 5 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 47,
+      "first_name": "Patricia",
+      "last_name": "Escudier",
+      "sex": "Male",
+      "city": "Vero Beach",
+      "state": "Florida"
+    },
+    "results": [
+      {
+        "race_year": 2009,
+        "time": "11:34:15",
+        "wheelchair": false,
+        "cohort": 1
+      },
+      {
+        "race_year": 1991,
+        "time": "17:15:18",
+        "wheelchair": false,
+        "cohort": 1
+      },
+      {
+        "race_year": 2010,
+        "time": "14:51:39",
+        "wheelchair": false,
+        "cohort": 5
+      },
+      {
+        "race_year": 2006,
+        "time": "19:45:10",
+        "wheelchair": false,
+        "cohort": 4
+      }
+    ]
+  },
+  {
+    "runner": {
+      "id": 48,
+      "first_name": "Carolina",
+      "last_name": "Dunbar",
+      "sex": "Male",
+      "city": "Oklahoma City",
+      "state": "Oklahoma"
+    },
+    "results": [
+      {
+        "race_year": 2011,
+        "time": "10:39:23",
+        "wheelchair": false,
+        "cohort": 4
+      },
+      { "race_year": 1999, "time": "9:02:47", "wheelchair": true, "cohort": 4 },
+      { "race_year": 1991, "time": "6:25:50", "wheelchair": true, "cohort": 4 },
+      { "race_year": 2012, "time": "3:28:45", "wheelchair": true, "cohort": 2 }
+    ]
+  },
+  {
+    "runner": {
+      "id": 49,
+      "first_name": "Tommie",
+      "last_name": "Wychard",
+      "sex": "Male",
+      "city": "Suffolk",
+      "state": "Virginia"
+    },
+    "results": []
+  },
+  {
+    "runner": {
+      "id": 50,
+      "first_name": "Baxter",
+      "last_name": "Penddreth",
+      "sex": "Male",
+      "city": "Fresno",
+      "state": "California"
+    },
+    "results": []
+  }
+]
