@@ -1,16 +1,23 @@
 import { Link, Route, Switch } from 'react-router-dom'
+import { useState } from 'react'
 import Home from './Pages/Home'
 import Register from './Pages/Register/Register'
 import LiveEvent from './Pages/LiveEvent/LiveEvent'
 import PreviousRaces from './Pages/PreviousRaces/PreviousRaces'
 import logo from './images/logo-2.png'
-import { Button } from '@material-ui/core'
+
 
 function App() {
+	const [revealHeader, setRevealHeader] = useState(false)
+
+	const handleClick = () => {
+		setRevealHeader(true)
+	}
+
 	return (
 		<div className="App">
-			<header>
-				<div className="container">
+			<header onClick={handleClick} className={revealHeader ? "reveal-header" : ""}>
+				<div className={revealHeader ? "container move-title" : "container"}>
 					<div className="logo-div">
 						<img src={logo} alt="" />
 					</div>
@@ -19,21 +26,26 @@ function App() {
 						<h1 className="white"><span className="light">MERCURY</span> MARATHON</h1>
 					</div>
 				</div>
-				<nav className="NavBar">
-					<ul className="nav">
-						<li className="nav-item">
-							<Link to='/' className='nav-link'>Home</Link>
-						</li>
-						<li className="nav-item">
-							<Link to='/register' className='nav-link'>Register</Link>
-						</li>
-						<li className="nav-item">
-							<Link to='/live_event' className='nav-link'>Live Event</Link>
-						</li>
-						<li className="nav-item">
-							<Link to='/previous_races' className='nav-link'>Previous Races</Link>
-						</li>
-					</ul>
+				<div className={revealHeader ? "enter hide" : "enter"}>
+					<h3>Enter</h3>
+				</div>
+				<nav>
+					<div className={revealHeader ? "nav-div show-nav" : "nav-div"}>
+						<ul className="nav">
+							<li className="nav-item">
+								<Link to='/' className='nav-link'>Home</Link>
+							</li>
+							<li className="nav-item">
+								<Link to='/register' className='nav-link'>Register</Link>
+							</li>
+							<li className="nav-item">
+								<Link to='/live_event' className='nav-link'>Live Event</Link>
+							</li>
+							<li className="nav-item">
+								<Link to='/previous_races' className='nav-link'>Previous Races</Link>
+							</li>
+						</ul>
+					</div>
 				</nav>
 			</header>
 			<main>

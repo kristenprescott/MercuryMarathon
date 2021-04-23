@@ -65,15 +65,33 @@ a:hover {
   color: #d32329;
 }
 
-@keyframes moveInRight {
+@keyframes revealHeader {
   0% {
-    transform: translateX(100%);
-  }
-  50% {
-    transform: translateX(100%);
+    height: 100vh;
   }
   100% {
+    height: 120px;
+  }
+}
+@keyframes moveTitle {
+  0% {
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  100% {
+    left: 0;
     transform: translateX(0);
+  }
+}
+@keyframes showNav {
+  0% {
+    right: -600px;
+  }
+  80% {
+    right: -600px;
+  }
+  100% {
+    right: 0;
   }
 }
 .light {
@@ -108,6 +126,11 @@ a:hover {
   font-style: italic;
 }
 
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .App header {
   position: relative;
   display: flex;
@@ -115,13 +138,18 @@ a:hover {
   justify-content: center;
   background-color: #05408d;
   border-bottom: 4px solid #d32329;
+  height: 100vh;
 }
 .App .container {
+  position: absolute;
   margin: 1rem;
   margin-left: 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  width: 600px;
 }
 .App .container .title-div {
   position: relative;
@@ -135,31 +163,71 @@ a:hover {
 .App .container .logo-div img {
   width: 120px;
 }
-
-.NavBar {
+.App .enter {
+  transition: opacity 0.5s;
+  cursor: pointer;
   position: absolute;
-  right: 0;
-  top: 124px;
-  background-color: #d32329;
-  animation: moveInRight 2s;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 20%);
+}
+.App .enter h3 {
+  color: #f5f5ff;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  font-weight: lighter;
+}
+
+.reveal-header {
+  animation: revealHeader 2s;
   animation-fill-mode: forwards;
 }
-.NavBar ul {
+
+.move-title {
+  animation: moveTitle 2s;
+  animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 600px) {
+  .App .container .title-div h2 {
+    font-size: 2.5rem;
+  }
+  .App .container .title-div h1 {
+    font-size: 3rem;
+  }
+}
+nav {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+nav .nav-div {
+  position: relative;
+  right: -600px;
+  background-color: #d32329;
+}
+nav .nav-div ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.NavBar ul li {
+nav .nav-div ul li {
   font-size: 15px;
   display: inline;
   padding: 1rem 2rem;
 }
-.NavBar ul li a {
+nav .nav-div ul li a {
   color: #f5f5ff;
   transition: color 0.1s;
 }
-.NavBar ul li a:hover {
+nav .nav-div ul li a:hover {
   color: #05408d;
+}
+
+.show-nav {
+  animation: showNav 2.7s;
+  animation-fill-mode: forwards;
 }
 
 .Home .jumbo img {
@@ -173,14 +241,15 @@ a:hover {
   position: absolute;
   right: 0;
   z-index: 1;
-  margin-top: -104px;
+  margin-top: -75px;
   display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
-  width: 50%;
+  justify-content: center;
+  align-items: baseline;
+  padding: 1rem;
+  width: 100%;
 }
 .Home .countdown-div p {
-  font-size: 30px;
+  font-size: 27.5px;
   color: #f5f5ff;
   margin-right: 3rem;
   letter-spacing: 0.25rem;
@@ -249,7 +318,14 @@ a:hover {
   object-position: left;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 980px) {
+  .Home .countdown-div {
+    flex-direction: column;
+    margin-top: -104px;
+  }
+  .Home .countdown-div p {
+    font-size: 2rem;
+  }
   .Home .content-2 {
     flex-direction: column;
     align-items: center;
