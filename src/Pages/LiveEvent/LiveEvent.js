@@ -10,11 +10,13 @@ export default function LiveEvent() {
 
   const getRunnerData = async () => {
     try {
-        // const res = await fetch(
-        //   `https://cors-anywhere.herokuapp.com/https://my.api.mockaroo.com/results/123?key=d6efe6b0`
-        // );
-        //const data = dbData.json(); //await res.json();
-        setRunnerData(dbData);
+           const res = await fetch(
+           `https://mercury-marathon-api.herokuapp.com/race/3/`
+         );
+        const data = await res.json();
+
+        console.log ("number of runners 2021: ", data.runners.length);
+        setRunnerData(data.runners);
       } catch (err) {
         console.log(err);
       }
@@ -28,7 +30,7 @@ export default function LiveEvent() {
 
     return (
         <div className="App">
-            <Race cohortData = {runnerData}></Race>
+            <Race allRunners = {runnerData}></Race>
 
 
         </div>

@@ -1,35 +1,34 @@
 export default function CohortBody (props) {
 
-    let cohortRunners = props.cohortRunners;
+    let cohort = props.cohort;
     let showFullCohort = false;
 
-    //runners.sort((a, b) => (a.last_name < b.last_name) ? 1 : -1);
-   
     /* help on sorting time strings from 
         https://stackoverflow.com/questions/17064603/sort-string-array-containing-time-in-format-0900-am/29013241
     */
-    cohortRunners.sort(function (a, b) {
-            if (parseInt(a.time.split(":")[0]) - parseInt(b.time.split(":")[0]) === 0) {
-                return parseInt(a.time.split(":")[1]) - parseInt(b.time.split(":")[1]);
-            } else {
-                return parseInt(a.time.split(":")[0]) - parseInt(b.time.split(":")[0]);
-            }
+
+   if (cohort.length > 0)
+   {
+    cohort.sort(function (a, b) {
+
+            const aStr = "" + a.real_time;
+            const bStr = "" + b.real_time;
+            return aStr.localeCompare(bStr);
+
         })
+   }
 
-    const topTen = cohortRunners.slice(0, 10);
+    const topTen = cohort.slice(0, 10);
 
-    const runnersToDisplay =  showFullCohort ? cohortRunners : topTen;
-
-
-    
+    const runnersToDisplay =  showFullCohort ? cohort : topTen;
     const tableRows = runnersToDisplay.map((runner, i) => {
     return (
     
         <tr key={i}> 
              <td>{i + 1} </td>
-             <td> Bib # {runner.id} </td>
+             <td>{runner.id} </td>
              <td>{runner.last_name}, {runner.first_name}</td>
-             <td>{runner.time} </td>
+             <td>{runner.real_time} </td>
              <td>{runner.city}  </td>
              <td>{runner.state}</td>      
 
