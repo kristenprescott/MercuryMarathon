@@ -1,7 +1,7 @@
 import { Link, Route, Switch } from 'react-router-dom'
 import { useState } from 'react'
 import Home from './Pages/Home'
-import Register from './Pages/Register/Register'
+import Register from './Pages/Register'
 import LiveEvent from './Pages/LiveEvent/LiveEvent'
 import PreviousRaces from './Pages/PreviousRaces/PreviousRaces'
 import logo from './images/logo-2.png'

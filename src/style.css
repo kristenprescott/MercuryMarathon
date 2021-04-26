@@ -66,6 +66,16 @@ a:hover {
   color: #d32329;
 }
 
+input, select {
+  font-size: 1.6rem;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+select {
+  width: 18rem;
+}
+
 @keyframes revealHeader {
   0% {
     height: 100vh;
@@ -349,6 +359,43 @@ nav .nav-div ul li a:hover {
   .Home .content-2 .pic {
     width: 100%;
   }
+}
+.Register h1 {
+  margin: 4rem;
+  margin-top: 5rem;
+}
+.Register .page {
+  width: 100%;
+  display: flex;
+}
+.Register .page .form {
+  width: 60%;
+  height: 40vh;
+  margin: 0 4rem;
+  padding: 2rem;
+  background-color: lightcyan;
+}
+.Register .page .img {
+  height: 40vh;
+  width: 40%;
+  margin-right: 4rem;
+}
+.Register .page .img img {
+  width: 100%;
+  height: 40vw;
+  object-fit: cover;
+  object-position: left;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-r {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
 /*# sourceMappingURL=style.css.map */
