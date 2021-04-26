@@ -1,8 +1,16 @@
-
 a, a:visited {
 	color: $color-primary;
+	font-weight: 600;
 	text-decoration: none;
 }
 a:hover {
 	color: $color-secondary;
+}
+input, select {
+	font-size: 1.6rem;
+	margin: 1rem;
+	padding: .5rem;
+}
+select {
+	width: 18rem;
 }
