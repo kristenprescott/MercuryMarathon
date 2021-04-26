@@ -15,11 +15,13 @@ export default function CohortBody (props) {
                 return parseInt(a.time.split(":")[0]) - parseInt(b.time.split(":")[0]);
             }
         })
+
+    const topTen = runners.slice(0, 10);
     
 
 
 
-    const tableRows = runners.map((runner, i) => {
+    const tableRows = topTen.map((runner, i) => {
     return (
     
         <tr key={i}> 
