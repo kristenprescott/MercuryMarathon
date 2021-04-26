@@ -142,7 +142,7 @@ nav {
 			color: $white;
 			margin-right: 3rem;
 			letter-spacing: .25rem;
-			line-height: 1rem;
+			line-height: 2rem;
 		}
 		h2 {
 			font-size: $font-size-base * 5;
@@ -180,12 +180,14 @@ nav {
 					margin-left: 1rem;
 					font-size: $font-size-base * 2;
 					display: flex;
-					align-items: center;
+					align-items: flex-end;
 					color: $color-secondary;
 					p {
 						margin-left: 1rem;
 						color: $black;
-						line-height: $line-height-base / 2;
+						line-height: $line-height-base / 1.5;
+						position: relative;
+						bottom: 3px;
 					}
 				}
 			}
@@ -258,9 +260,11 @@ nav {
 }
 
 .Register {
+	margin-top: 4rem;
+	margin-left: 2rem;
 	h1 {
-		margin: 4rem;
-		margin-top: 5rem;
+		// margin: 4rem;
+		// margin-top: 5rem;
 	}
 	.page {
 		width: 100%;
@@ -268,7 +272,7 @@ nav {
 		.form {
 			width: 60%;
 			// height: 40vh;
-			margin: 0 4rem;
+			margin-right: 2rem;
 			padding: 2rem;
 			background-color: lightcyan;
 		}
@@ -298,8 +302,9 @@ nav {
 	align-items: baseline;
 
 }
-// .flex-r {
-// 	display: flex;
-// 	justify-content: flex-start;
-// 	align-items: baseline;
-// }
+
+.LiveEvent {
+	margin-top: 4rem;
+	display: flex;
+	justify-content: space-around;
+}

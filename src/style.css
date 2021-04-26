@@ -271,7 +271,7 @@ nav .nav-div ul li a:hover {
   color: #f5f5ff;
   margin-right: 3rem;
   letter-spacing: 0.25rem;
-  line-height: 1rem;
+  line-height: 2rem;
 }
 .Home .countdown-div h2 {
   font-size: 50px;
@@ -308,13 +308,15 @@ nav .nav-div ul li a:hover {
   margin-left: 1rem;
   font-size: 20px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   color: #d32329;
 }
 .Home .content-2 .race-info ul li p {
   margin-left: 1rem;
   color: #131313;
-  line-height: 1.1rem;
+  line-height: 1.4666666667rem;
+  position: relative;
+  bottom: 3px;
 }
 .Home .content-2 .race-info a {
   display: inline-block;
@@ -360,9 +362,9 @@ nav .nav-div ul li a:hover {
     width: 100%;
   }
 }
-.Register h1 {
-  margin: 4rem;
-  margin-top: 5rem;
+.Register {
+  margin-top: 4rem;
+  margin-left: 2rem;
 }
 .Register .page {
   width: 100%;
@@ -370,7 +372,7 @@ nav .nav-div ul li a:hover {
 }
 .Register .page .form {
   width: 60%;
-  margin: 0 4rem;
+  margin-right: 2rem;
   padding: 2rem;
   background-color: lightcyan;
 }
@@ -396,6 +398,12 @@ nav .nav-div ul li a:hover {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+}
+
+.LiveEvent {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */
