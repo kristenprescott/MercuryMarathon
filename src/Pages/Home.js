@@ -50,8 +50,8 @@ export default function Home() {
 					<Link to="/register">Register Now!</Link>
 					<h3><span className="light">PACKET PICKUP</span> INFO</h3>
 					<p>Head to the Check-In tent to pickup everything you'll need for the grand event!</p>
-					<p>If you have little ones that need tending, we are providing free daycare during the event!</p>
-					<p>And, as always, enjoy a cold beer at the finish-line, courtesy of our sponsor Grand City Brewery!</p>
+					<p>If you have little ones that need tending, we are providing <span>free daycare</span> during the event!</p>
+					<p>And, as always, enjoy a cold beer at the finish-line, courtesy of our sponsor <span>Grand City Brewery</span>!</p>
 				</div>
 				<div className="pic">
 					<img src={image1} alt="" />

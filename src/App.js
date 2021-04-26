@@ -16,7 +16,7 @@ function App() {
 
 	return (
 		<div className="App">
-			<header onClick={handleClick} className={revealHeader ? "reveal-header" : ""}>
+			<header className={revealHeader ? "reveal-header" : ""}>
 				<div className={revealHeader ? "container move-title" : "container"}>
 					<div className="logo-div">
 						<img src={logo} alt="" />
@@ -27,7 +27,7 @@ function App() {
 					</div>
 				</div>
 				<div className={revealHeader ? "enter hide" : "enter"}>
-					<h3>Enter</h3>
+					<h3 onClick={handleClick} >Enter</h3>
 				</div>
 				<nav>
 					<div className={revealHeader ? "nav-div show-nav" : "nav-div"}>

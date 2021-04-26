@@ -53,6 +53,7 @@ p {
   font-size: 1.68rem;
   line-height: 2.64rem;
   padding: 1rem 0;
+  padding-bottom: 0;
 }
 
 a, a:visited {
@@ -131,6 +132,21 @@ a:hover {
   pointer-events: none;
 }
 
+.reveal-header {
+  animation: revealHeader 2s;
+  animation-fill-mode: forwards;
+}
+
+.move-title {
+  animation: moveTitle 2s;
+  animation-fill-mode: forwards;
+}
+
+.show-nav {
+  animation: showNav 2.7s;
+  animation-fill-mode: forwards;
+}
+
 .App header {
   position: relative;
   display: flex;
@@ -164,28 +180,23 @@ a:hover {
   width: 120px;
 }
 .App .enter {
-  transition: opacity 0.5s;
+  transition: opacity 0.2s;
   cursor: pointer;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, 20%);
+  transform: translate(-143%, 0%);
 }
 .App .enter h3 {
   color: #f5f5ff;
   font-size: 3rem;
   letter-spacing: 0.5rem;
   font-weight: lighter;
+  transition: all 0.5s;
 }
-
-.reveal-header {
-  animation: revealHeader 2s;
-  animation-fill-mode: forwards;
-}
-
-.move-title {
-  animation: moveTitle 2s;
-  animation-fill-mode: forwards;
+.App .enter h3:hover {
+  transform: scale(1.2);
+  color: #d32329;
 }
 
 @media screen and (max-width: 600px) {
@@ -206,6 +217,7 @@ nav .nav-div {
   position: relative;
   right: -600px;
   background-color: #d32329;
+  border-radius: 0 0 0 10px;
 }
 nav .nav-div ul {
   display: flex;
@@ -225,11 +237,6 @@ nav .nav-div ul li a:hover {
   color: #05408d;
 }
 
-.show-nav {
-  animation: showNav 2.7s;
-  animation-fill-mode: forwards;
-}
-
 .Home .jumbo img {
   object-fit: cover;
   object-position: top;
@@ -238,10 +245,11 @@ nav .nav-div ul li a:hover {
 }
 .Home .countdown-div {
   background-color: rgba(0, 0, 0, 0.575);
+  border-radius: 30px 30px 0 0;
   position: absolute;
   right: 0;
   z-index: 1;
-  margin-top: -75px;
+  margin-top: -74px;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -274,6 +282,10 @@ nav .nav-div ul li a:hover {
   border-left: none;
   padding: 2rem;
   width: 50%;
+}
+.Home .content-2 .race-info p span {
+  color: #05408d;
+  font-weight: 600;
 }
 .Home .content-2 .race-info h2 {
   margin: 0;

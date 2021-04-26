@@ -26,3 +26,16 @@
 	opacity: 0;
 	pointer-events: none;
 }
+.reveal-header {
+	animation: revealHeader 2s;
+	animation-fill-mode: forwards;
+}
+
+.move-title {
+	animation: moveTitle 2s;
+	animation-fill-mode: forwards;
+}
+.show-nav {
+	animation: showNav 2.7s;
+	animation-fill-mode: forwards;
+}
