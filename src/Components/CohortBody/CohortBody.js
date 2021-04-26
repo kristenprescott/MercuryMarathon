@@ -1,5 +1,3 @@
-const letters = ["AA", "BB", "CC", "DD"];
-
 export default function CohortBody (props) {
 
     const tableRows = props.cohortData.runners.map((runner, i) => {
@@ -11,10 +9,7 @@ export default function CohortBody (props) {
              <td>{runner.last_name}, {runner.first_name}</td>
              <td>{runner.time} </td>
              <td>{runner.city}  </td>
-             <td>{runner.state}</td>
-           
-
-             
+             <td>{runner.state}</td>      
 
         </tr> 
         )

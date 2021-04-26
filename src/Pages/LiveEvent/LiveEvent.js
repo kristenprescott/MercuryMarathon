@@ -29,8 +29,6 @@ export default function LiveEvent() {
     return (
         <div className="App">
             <Race cohortData = {runnerData}></Race>
-            
-
 
 
         </div>
