@@ -5,10 +5,12 @@ import CohortBody from '/Users/caseymccullough/Desktop/SEIR_Erica/mercury-marath
 
 export default function Cohort (props) {
 
+    const cohortRunners = props.cohortData.runners;
+    cohortRunners.sort((a, b) => (a.time < b.time) ? 1 : -1)
     return (
     <table className="cohort">
         <CohortHeader>Header</CohortHeader> 
-        <CohortBody cohortData = {props.cohortData}></CohortBody>
+        <CohortBody cohortRunners = {cohortRunners}></CohortBody>
     </table>
        
       

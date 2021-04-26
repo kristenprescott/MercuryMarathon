@@ -1,6 +1,25 @@
 export default function CohortBody (props) {
 
-    const tableRows = props.cohortData.runners.map((runner, i) => {
+  
+    let runners = props.cohortRunners;
+
+    //runners.sort((a, b) => (a.last_name < b.last_name) ? 1 : -1);
+   
+    /* help on sorting time strings from 
+        https://stackoverflow.com/questions/17064603/sort-string-array-containing-time-in-format-0900-am/29013241
+    */
+    runners.sort(function (a, b) {
+            if (parseInt(a.time.split(":")[0]) - parseInt(b.time.split(":")[0]) === 0) {
+                return parseInt(a.time.split(":")[1]) - parseInt(b.time.split(":")[1]);
+            } else {
+                return parseInt(a.time.split(":")[0]) - parseInt(b.time.split(":")[0]);
+            }
+        })
+    
+
+
+
+    const tableRows = runners.map((runner, i) => {
     return (
     
         <tr key={i}> 
@@ -18,7 +37,6 @@ export default function CohortBody (props) {
     return (
         <tbody>
             {tableRows}
-
       </tbody>
     );
 }
