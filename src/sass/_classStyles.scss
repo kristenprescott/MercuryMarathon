@@ -2,8 +2,7 @@
 	font-weight: lighter;
 }
 .heavy {
-	font-weight: bold;
-	font-size: 1.6rem;
+	font-weight: 800;
 }
 .loading {   /* to use in your component file, use `import loading from '<path-to->/images/loading.gif', then in img tag src={loading}  */
 	width: 35px;
@@ -16,4 +15,14 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.white {
+	color: $white;
+}
+.italic {
+	font-style: italic;
+}
+.hide {
+	opacity: 0;
+	pointer-events: none;
 }

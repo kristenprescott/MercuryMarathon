@@ -1,32 +1,51 @@
 import { Link, Route, Switch } from 'react-router-dom'
-import Home from './Pages/Home/Home'
+import { useState } from 'react'
+import Home from './Pages/Home'
 import Register from './Pages/Register/Register'
 import LiveEvent from './Pages/LiveEvent/LiveEvent'
 import PreviousRaces from './Pages/PreviousRaces/PreviousRaces'
+import logo from './images/logo-2.png'
 
 
 function App() {
+	const [revealHeader, setRevealHeader] = useState(false)
+
+	const handleClick = () => {
+		setRevealHeader(true)
+	}
+
 	return (
 		<div className="App">
-			<header>
-				<div>
-					<h1>Header and Logo</h1>
+			<header onClick={handleClick} className={revealHeader ? "reveal-header" : ""}>
+				<div className={revealHeader ? "container move-title" : "container"}>
+					<div className="logo-div">
+						<img src={logo} alt="" />
+					</div>
+					<div className="title-div">
+						<h2 className="white light italic">the annual</h2>
+						<h1 className="white"><span className="light">MERCURY</span> MARATHON</h1>
+					</div>
+				</div>
+				<div className={revealHeader ? "enter hide" : "enter"}>
+					<h3>Enter</h3>
 				</div>
 				<nav>
-					<ul className="nav">
-						<li className="nav-item">
-							<Link to='/' className='nav-link'>Home</Link>
-						</li>
-						<li className="nav-item">
-							<Link to='/register' className='nav-link'>Register</Link>
-						</li>
-						<li className="nav-item">
-							<Link to='/live_event' className='nav-link'>Live Event</Link>
-						</li>
-						<li className="nav-item">
-							<Link to='/previous_races' className='nav-link'>Previous Races</Link>
-						</li>
-					</ul>
+					<div className={revealHeader ? "nav-div show-nav" : "nav-div"}>
+						<ul className="nav">
+							<li className="nav-item">
+								<Link to='/' className='nav-link'>Home</Link>
+							</li>
+							<li className="nav-item">
+								<Link to='/register' className='nav-link'>Register</Link>
+							</li>
+							<li className="nav-item">
+								<Link to='/live_event' className='nav-link'>Live Event</Link>
+							</li>
+							<li className="nav-item">
+								<Link to='/previous_races' className='nav-link'>Previous Races</Link>
+							</li>
+						</ul>
+					</div>
 				</nav>
 			</header>
 			<main>
@@ -37,6 +56,9 @@ function App() {
 					<Route path='/previous_races/' component={PreviousRaces} />
 				</Switch>
 			</main>
+			<footer>
+
+			</footer>
 		</div>
 	);
 }
