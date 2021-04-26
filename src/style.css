@@ -370,29 +370,29 @@ nav .nav-div ul li a:hover {
 }
 .Register .page .form {
   width: 60%;
-  height: 40vh;
   margin: 0 4rem;
   padding: 2rem;
   background-color: lightcyan;
 }
 .Register .page .img {
-  height: 40vh;
   width: 40%;
   margin-right: 4rem;
 }
 .Register .page .img img {
   width: 100%;
-  height: 40vw;
+  height: 100%;
   object-fit: cover;
   object-position: left;
 }
 
-.flex-c {
+.form-line {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
-.flex-r {
+.form-field {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;

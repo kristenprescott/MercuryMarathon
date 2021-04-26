@@ -122,27 +122,30 @@ export default function Register() {
 				<div className="form">
 					<form onSubmit={handleSubmit}>
 						{/* NAME INPUT */}
-						<div className="flex-r">
-							<label htmlFor="first_name">First Name:</label>
-							<input
-								type="text"
-								name="first_name"
-								value={newRunner.first_name}
-								onChange={handleChange}
-							/>
-							<label htmlFor="last_name">Last Name:</label>
-							<input
-								type="text"
-								name="last_name"
-								value={newRunner.last_name}
-								onChange={handleChange}
-							/>
+						<div className="form-line">
+							<div className="form-field">
+								<label htmlFor="first_name">First Name:</label>
+								<input
+									type="text"
+									name="first_name"
+									value={newRunner.first_name}
+									onChange={handleChange}
+								/>
+							</div>
+							<div className="form-field">
+								<label htmlFor="last_name">Last Name:</label>
+								<input
+									type="text"
+									name="last_name"
+									value={newRunner.last_name}
+									onChange={handleChange}
+								/>
+							</div>
 						</div>
 
-
 						{/* LOCATION */}
-						<div className="flex-r">
-							<div className="wrapper">
+						<div className="form-line">
+							<div className="form-field">
 								<label htmlFor="city">City:</label>
 								<input
 									type="text"
@@ -151,8 +154,7 @@ export default function Register() {
 									onChange={handleChange}
 								/>
 							</div>
-
-							<div className="wrapper">
+							<div className="form-field">
 								<label htmlFor="state">State:</label>
 								<input
 									type="text"
@@ -164,41 +166,46 @@ export default function Register() {
 						</div>
 
 						{/* EMAIL INPUT */}
-						<div className="flex-r">
-							<label htmlFor="email">Email:</label>
-							<input
-								// type="email"
-								type="text"
-								name="email"
-								value={newRunner.email}
-								onChange={handleChange}
-							/>
+						<div className="form-line">
+							<div className="form-field">
+								<label htmlFor="email">Email:</label>
+								<input
+									// type="email"
+									type="text"
+									name="email"
+									value={newRunner.email}
+									onChange={handleChange}
+								/>
+							</div>
 						</div>
 
 						{/* DOB DATEPICKER */}
-						<div className="flex-r">
-							<label htmlFor="dob">Date Of Birth:</label>
-
-							<input
-								type="date"
-								name="dob"
-								min="1900-01-01"
-								max="2005-01-01"
-								onChange={handleChange}
-								value={newRunner.DOB}
-							></input>
+						<div className="form-line">
+							<div className="form-field">
+								<label htmlFor="dob">Date Of Birth:</label>
+								<input
+									type="date"
+									name="dob"
+									min="1900-01-01"
+									max="2005-01-01"
+									onChange={handleChange}
+									value={newRunner.DOB}
+								></input>
+							</div>
 						</div>
 
 						{/* SEX SELECT */}
 
-						<div className="flex-r">
-							<label htmlFor="sex">Sex:</label>
-							<div className="select">
-								<select required id="sex" name="sex" onChange={handleChange}>
-									<option value="">--Select sex--</option>
-									<option value="F">Female</option>
-									<option value="M">Male</option>
-								</select>
+						<div className="form-line">
+							<div className="form-field">
+								<label htmlFor="sex">Sex:</label>
+								<div className="select">
+									<select required id="sex" name="sex" onChange={handleChange}>
+										<option value="">--Select sex--</option>
+										<option value="F">Female</option>
+										<option value="M">Male</option>
+									</select>
+								</div>
 							</div>
 						</div>
 
@@ -286,14 +293,16 @@ export default function Register() {
         </div> */}
 
 						{/* WHEELCHAIR CHECKBOX INPUT */}
-						<div className="flex-r">
-							<label htmlFor="wheelchair">Wheelchair</label>
-							<input
-								type="checkbox"
-								name="wheelchair"
-								value={newRunner.wheelchair}
-								onChange={handleChange}
-							/>
+						<div className="form-line">
+							<div className="form-field">
+								<label htmlFor="wheelchair">Wheelchair?</label>
+								<input
+									type="checkbox"
+									name="wheelchair"
+									value={newRunner.wheelchair}
+									onChange={handleChange}
+								/>
+							</div>
 						</div>
 
 						{/* SUBMIT BUTTON */}
