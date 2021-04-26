@@ -2,7 +2,7 @@ import Race from "../../Components/Race/Race.js";
 import { useState, useEffect } from "react";
 
 
-import dbData from "../../sample-runners1.json";
+//import dbData from "../../sample-runners1.json";
 
 export default function LiveEvent() {
 

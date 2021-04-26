@@ -6,7 +6,6 @@ const cohortLabels = ["Men 18-39", "Women 18-39","Men 40-49", "Women 40-49","Men
 export default function Race(props) {
 
 	const allRunners = props.allRunners;
-	console.log ("all runners: ", allRunners);
 
 	let cohortArray = Array(cohortLabels.length);
 
@@ -17,7 +16,6 @@ export default function Race(props) {
 		cohortArray[i] = [];
 	}
 	
-
 	// sort all runners into cohorts
 	// based on their interal cohort #
 	for (let i = 0; i < allRunners.length; i++)

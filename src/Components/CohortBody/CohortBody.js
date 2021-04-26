@@ -3,10 +3,6 @@ export default function CohortBody (props) {
     let cohort = props.cohort;
     let showFullCohort = false;
 
-    /* help on sorting time strings from 
-        https://stackoverflow.com/questions/17064603/sort-string-array-containing-time-in-format-0900-am/29013241
-    */
-
    if (cohort.length > 0)
    {
     cohort.sort(function (a, b) {
@@ -18,9 +14,9 @@ export default function CohortBody (props) {
         })
    }
 
-    const topTen = cohort.slice(0, 10);
+    const topFive = cohort.slice(0, 5);
 
-    const runnersToDisplay =  showFullCohort ? cohort : topTen;
+    const runnersToDisplay =  showFullCohort ? cohort : topFive;
     const tableRows = runnersToDisplay.map((runner, i) => {
     return (
     
