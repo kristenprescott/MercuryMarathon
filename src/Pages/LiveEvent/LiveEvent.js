@@ -1,4 +1,4 @@
-import Race from "/Users/caseymccullough/Desktop/SEIR_Erica/mercury-marathon/mercury-marathon-react/src/Components/Race/Race.js";
+import Race from "../../Components/Race/Race.js";
 import { useState, useEffect } from "react";
 
 
