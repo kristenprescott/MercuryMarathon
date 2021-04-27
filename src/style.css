@@ -208,6 +208,19 @@ select {
   transform: scale(1.2);
   color: #d32329;
 }
+.App footer {
+  background-color: #05408d;
+  color: #f5f5ff;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.App footer p {
+  margin: 0;
+  padding: 0;
+}
 
 @media screen and (max-width: 600px) {
   .App .container .title-div h2 {
@@ -404,6 +417,14 @@ nav .nav-div ul li a:hover {
   margin-top: 4rem;
   display: flex;
   justify-content: space-around;
+}
+
+.PreviousRaces {
+  margin-top: 4rem;
+  margin-left: 4rem;
+}
+.PreviousRaces .grid-style {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,11 +3,13 @@ import { useState } from 'react'
 import Home from './Pages/Home'
 import Register from './Pages/Register'
 import LiveEvent from './Pages/LiveEvent'
-import PreviousRaces from './Pages/PreviousRaces/PreviousRaces'
+import PreviousRaces from './Pages/PreviousRaces'
 import logo from './images/logo-2.png'
 
 function App() {
 	const [revealHeader, setRevealHeader] = useState(false)
+	const date = new Date()
+	const year = date.getFullYear()
 
 	const handleClick = () => {
 		setRevealHeader(true)
@@ -56,7 +58,7 @@ function App() {
 				</Switch>
 			</main>
 			<footer>
-
+				<p>Copyright {year} Knights of the Erica Round Table</p>
 			</footer>
 		</div>
 	);

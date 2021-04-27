@@ -60,6 +60,19 @@
 			color: $color-secondary;
 		}
 	}
+	footer {
+		p {
+			margin: 0;
+			padding: 0;
+		}
+		background-color: $color-primary;
+		color: $white;
+		height: 75px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 3rem;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -157,7 +170,6 @@ nav {
 		justify-content: space-around;
 		position: relative;
 		margin-top: -4px;
-		// margin: 2rem 0;
 		.race-info {
 			border: 30px solid $color-secondary;
 			border-right: none;
@@ -307,4 +319,12 @@ nav {
 	margin-top: 4rem;
 	display: flex;
 	justify-content: space-around;
+}
+
+.PreviousRaces {
+	margin-top: 4rem;
+	margin-left: 4rem;
+	.grid-style {
+		font-size: 1.5rem;
+	}
 }
