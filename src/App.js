@@ -6,7 +6,6 @@ import LiveEvent from './Pages/LiveEvent'
 import PreviousRaces from './Pages/PreviousRaces/PreviousRaces'
 import logo from './images/logo-2.png'
 
-
 function App() {
 	const [revealHeader, setRevealHeader] = useState(false)
 
