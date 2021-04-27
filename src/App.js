@@ -58,7 +58,8 @@ function App() {
 				</Switch>
 			</main>
 			<footer>
-				<p>Copyright {year} Knights of the Erica Round Table</p>
+				<p> &#169; {year} Knights of the ERICA Round Table</p>
+				<p><small>Images from The Boston Marathon used under Fair Use for academic purposes.</small></p>
 			</footer>
 		</div>
 	);

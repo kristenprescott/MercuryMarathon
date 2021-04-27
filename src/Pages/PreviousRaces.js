@@ -28,13 +28,13 @@ export default function PreviousRaces() {
 	}
 
 	function handleChange(e) {
-		if (e.target.value == 2019) {
+		if (e.target.value === '2019') {
 			setRunners(rows0)
 		}
-		else if (e.target.value == 2020) {
+		else if (e.target.value === '2020') {
 			setRunners(rows1)
 		}
-		else if (e.target.value == 2021) {
+		else if (e.target.value === '2021') {
 			setRunners(rows2)
 		}
 		else {
@@ -60,27 +60,32 @@ export default function PreviousRaces() {
 	function CustomToolbar() {
 		return <GridFilterToolbarButton />
 	}
-	return (
-		<div className='PreviousRaces'>
-			<h1>Previous Race Info</h1>
-			<form onChange={handleChange} onSubmit={handleSubmit}>
-				<label for="years">Year:</label>
-				<select className="years">
-					<option value="select a year" >Select a Year:</option>
-					{rows.map((year) => {
-						return (
-							<option value={year.year}>{year.year}</option>
-						)
-					})}
-				</select>
-			</form>
 
-			<div style={{ height: 600, width: '90%' }}>
-				<DataGrid className="grid-style" rows={runners} columns={columns} pageSize={10} components={{
-					Toolbar: CustomToolbar,
-				}}>
-				</DataGrid>
+	if (rows.length) {
+		return (
+			<div className='PreviousRaces'>
+				<h1>Previous Race Info</h1>
+				<form onChange={handleChange} onSubmit={handleSubmit}>
+					<label for="years">Year:</label>
+					<select className="years">
+						<option value="select a year" >Select a Year:</option>
+						{rows.map((year) => {
+							return (
+								<option value={year.year}>{year.year}</option>
+							)
+						})}
+					</select>
+				</form>
+
+				<div style={{ height: 600, width: '90%' }}>
+					<DataGrid className="grid-style" rows={runners} columns={columns} pageSize={10} components={{
+						Toolbar: CustomToolbar,
+					}}>
+					</DataGrid>
+				</div>
 			</div>
-		</div>
-	)
+		)
+	} else {
+		return <div className='PreviousRaces'><h2>Loading...</h2></div>
+	}
 }

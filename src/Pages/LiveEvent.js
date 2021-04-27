@@ -24,14 +24,18 @@ export default function LiveEvent() {
 		getRunnerData();
 	}, []);
 
-	return (
-		<div className="LiveEvent">
-			<div>
-				<Race allRunners={runnerData} />
+	if (runnerData.length) {
+		return (
+			<div className="LiveEvent">
+				<div>
+					<Race allRunners={runnerData} />
+				</div>
+				<div>
+					<img src={road} alt="" />
+				</div>
 			</div>
-			<div>
-				<img src={road} alt="" />
-			</div>
-		</div>
-	)
+		)
+	} else {
+		return <div className="LiveEvent"><h2>Loading...</h2></div>
+	}
 }
