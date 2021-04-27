@@ -15,6 +15,11 @@ The Results Page was generated on the front end using React.  Given that this wa
 ## Previous Results Page
 In this page, we used React and `Material UI Data Grid` to make the data grid that shows the data. You can sort through the data using the filter button in the grid and you can also use the dropdown for each year of the races.
 
+## API: Django
+### Technologies used:
+- Django REST Framework: Foreign keys, `ManyToManyField()`, `DurationField()`, NESTED SERIALIZERS!!!
+- Heroku: deploy from github repo, PostgreSQL add-on, Heroku CLI, SQL scripts
+
 ## Bugs and Features to Add
 - Complete the dropdown for cohort registration on the form
 
