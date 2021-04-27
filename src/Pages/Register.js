@@ -14,7 +14,7 @@ export default function Register() {
 		wheelchair: false,
 		// fix this
 		race_id: 3,
-		cohort_id: 8,
+		cohort_id: 1,
 	});
 
 	useEffect(() => {

@@ -78,21 +78,33 @@
 
 @media screen and (max-width: 600px) {
 	.App {
+		width: 100vw;
+		overflow: hidden;
 		header {
 		}
 		.container {
 			.title-div {
-				
+				height: 100px;
+				line-height: 1rem;
 				h2 {
-					font-size: 2.5rem;
+					font-size: 5vw;
 				}
 				h1 {
-					font-size: 3rem;
+					font-size: 5vw;
 				}
 			}
 			.logo-div {
+				height: 100px;
 				img {
+					height: 70px;
+					width: auto;
 				}
+			}
+		}
+		footer {
+			p {
+				font-size: 1.2rem;
+				line-height: 1.5rem;
 			}
 		}
 	}
@@ -257,11 +269,13 @@ nav {
 		}
 		.countdown-div {
 			flex-direction: column;
+			align-items: space-between;
 			margin-top: -104px;
 			p {
-				font-size: 2rem;
+				font-size: 3.8vw;
 			}
 			h2 {
+				font-size: 7vw;
 				span {
 				}
 			}
@@ -388,6 +402,8 @@ nav {
 @media screen and (max-width: 600px) {
 	.LiveEvent {
 		margin-top: 7rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
 		h1 {
 			font-size: 2.6rem;
 		}
@@ -414,7 +430,7 @@ nav {
 		}
 		margin-top: 6rem;
 		.grid-style {
-			font-size: 1.5rem;
+			font-size: unset;
 		}
 	}
 }

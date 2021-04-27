@@ -157,6 +157,10 @@ select {
   animation-fill-mode: forwards;
 }
 
+.reverse-overflow {
+  overflow: initial;
+}
+
 .App header {
   position: relative;
   display: flex;
@@ -224,11 +228,30 @@ select {
 }
 
 @media screen and (max-width: 600px) {
+  .App {
+    width: 100vw;
+    overflow: hidden;
+  }
+  .App .container .title-div {
+    height: 100px;
+    line-height: 1rem;
+  }
   .App .container .title-div h2 {
-    font-size: 2.5rem;
+    font-size: 5vw;
   }
   .App .container .title-div h1 {
-    font-size: 3rem;
+    font-size: 5vw;
+  }
+  .App .container .logo-div {
+    height: 100px;
+  }
+  .App .container .logo-div img {
+    height: 70px;
+    width: auto;
+  }
+  .App footer p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
 }
 nav {
@@ -370,10 +393,14 @@ nav .nav-div ul li a:hover {
 @media screen and (max-width: 980px) {
   .Home .countdown-div {
     flex-direction: column;
+    align-items: space-between;
     margin-top: -104px;
   }
   .Home .countdown-div p {
-    font-size: 2rem;
+    font-size: 3.8vw;
+  }
+  .Home .countdown-div h2 {
+    font-size: 7vw;
   }
   .Home .content-2 {
     flex-direction: column;
@@ -458,6 +485,8 @@ nav .nav-div ul li a:hover {
 @media screen and (max-width: 600px) {
   .LiveEvent {
     margin-top: 7rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
   .LiveEvent h1 {
     font-size: 2.6rem;
@@ -482,7 +511,7 @@ nav .nav-div ul li a:hover {
     font-size: 2.6rem;
   }
   .PreviousRaces .grid-style {
-    font-size: 1.5rem;
+    font-size: unset;
   }
 }
 
