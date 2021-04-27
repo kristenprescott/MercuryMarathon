@@ -12,6 +12,9 @@ export default function Register() {
 		city: "",
 		state: "",
 		wheelchair: false,
+		// fix this
+		race_id: 3,
+		cohort_id: 8,
 	});
 
 	useEffect(() => {
@@ -175,7 +178,7 @@ export default function Register() {
 
 						{/* SUBMIT BUTTON */}
 						<div className="flex-r">
-							<input type="submit" />
+							<input className="submit-btn" type="submit" />
 						</div>
 					</form>
 
