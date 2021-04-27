@@ -4,7 +4,6 @@ import Register from './Pages/Register/Register'
 import LiveEvent from './Pages/LiveEvent/LiveEvent'
 import PreviousRaces from './Pages/PreviousRaces/PreviousRaces'
 
-
 function App() {
 	return (
 		<div className="App">
