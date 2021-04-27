@@ -20,6 +20,8 @@ In this page, we used React and `Material UI Data Grid` to make the data grid th
 - Django REST Framework: Foreign keys, `ManyToManyField()`, `DurationField()`, NESTED SERIALIZERS!!!
 - Heroku: deploy from github repo, PostgreSQL add-on, Heroku CLI, SQL scripts
 
+![image](https://user-images.githubusercontent.com/26289436/116245476-fd9e1380-a736-11eb-90ed-06bb9cbb13ab.png)
+
 ## Bugs and Features to Add
 - Complete the dropdown for cohort registration on the form
 
