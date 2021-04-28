@@ -7,7 +7,7 @@ Mercury Marathon is a mock website for a city Marathon built using React, Django
 The home page features a clickable splash screen showing only the logo, which opens up into a full page view of the website. A countdown clock is featured prominently for the next race which was built using `react-countdown`. Information for the upcoming race is displayed below the fold.
 
 ## Registration
-The registration page features a form built using React on the front-end and Django on the back end.
+The Registration Page is where new users can register for a future race. A user would register their their first and last name, location, date of birth, email address and sex to be later sorted into cohorts and different races.
 
 ## LiveRace Page
 The Results Page was generated on the front end using React.  Given that this was not a real race, a randomly-generated time was assigned to each runner at the time of their registration.  Registration also uses each entrant's age and sex to assign them a "cohort". The API provides runner data that is batched by cohort but otherwise unsorted.  So the Results Page sorts each cohort by time, with the lesser times placed at the top of each list.  The page is also set to only display the ten best times within each cohort.  A button placed at top top of each cohort can be used to toggle each cohort to show all runners OR to show only the top ten within each group.
