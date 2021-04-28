@@ -412,6 +412,9 @@ nav {
 .PreviousRaces {
 	margin-top: 4rem;
 	margin-left: 4rem;
+	.years {
+		width: unset;
+	}
 	.grid-style {
 		font-size: 1.5rem;
 	}

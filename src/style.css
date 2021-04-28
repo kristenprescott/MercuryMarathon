@@ -507,6 +507,9 @@ nav .nav-div ul li a:hover {
   margin-top: 4rem;
   margin-left: 4rem;
 }
+.PreviousRaces .years {
+  width: unset;
+}
 .PreviousRaces .grid-style {
   font-size: 1.5rem;
 }
